@@ -2,14 +2,14 @@ const socket  = require("socket.io")
 const mydb = require("./db.js")
 const gamectr = require("./game/game_ctr.js")
 const app = socket(3000)
-const db_config = require("./db_config.js")
+
 
 mydb.connect({
-   "host": db_config.dbconfig.host,
-   "port": db_config.dbconfig.port,
-   "user": db_config.dbconfig.user,
-   "password": db_config.dbconfig.password,
-   "database": db_config.dbconfig.database,
+   "host": "127.0.0.1",
+   "port": 3306,
+   "user": "root",
+   "password": "123456",
+   "database": "ddz"
 })
 
 app.on("connection",function(socket){
