@@ -1,4 +1,4 @@
-import myglobal from "../../mygolbal.js"
+import myglobal from "../mygolbal.js"
 
 cc.Class({
     extends: cc.Component,
